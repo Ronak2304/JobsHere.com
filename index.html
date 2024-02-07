@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="fevicon.jpg">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <img src="WhatsApp Image 2023-12-08 at 9.39.30 PM.jpeg" height="30%" width="30%">
+<div id="buttonsflexcontainer">
+    <button class="signup"><a href="ronaksignup.html" style="color: white; text-decoration: none;">SignUp</a></button>
+    <button class="open-button" onclick="openForm()">Login</button>
+</div>
+<div class="form-popup" id="myForm">
+  <form class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Username" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <div class="remember">
+        <label><input type="checkbox">Remember</label>
+        <a href="#">Forgotten Password</a>
+    </div>
+    <div class="registration">
+        <p>Don't have an account? <a href="ronaksignup.html">Sign up</a></p>
+    </div>
+
+    <button type="submit" class="btn"><a id="login" href="demo page (1).html">Login</a></button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<footer>Copyrights Reserved</footer>
+</body>
+</html>
